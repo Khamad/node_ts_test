@@ -1,8 +1,7 @@
 language: node_js
 script: npm test && npm run build && ls -a
 before_deploy:
-  cd dist
-  ls
+  cd dist && ls
 deploy:
   skip_cleanup: true
   provider: heroku
