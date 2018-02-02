@@ -1,7 +1,7 @@
 language: node_js
 script: npm test && npm run build && ls -a
 before_deploy:
-  cp package.json dist/package.json && cd dist
+  cp package.json dist/package.json && cp Procfile dist/Procfile && cd dist
 deploy:
   skip_cleanup: true
   provider: heroku
