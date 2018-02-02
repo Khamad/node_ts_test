@@ -9,7 +9,7 @@ const app = express()
 
 const PORT = process.env.PORT
 
-app.get('/', (req: express.Request, res: express.Response) => res.send('Working...'))
+app.get('/', (req: express.Request, res: express.Response) => res.send('Server is working...'))
 
 app.listen(PORT)
 
