@@ -1,2 +1,9 @@
 language: node_js
 script: npm test && npm run build && ls -a
+deploy:
+  provider: heroku
+  api_key:
+    secure: aNpamA+0MzUl3O+6jn2zbA0meD1vkD8coolT855qMzDOvurkZI4fIbHLf1us6Cq7oqUw5UO+gYksd/7FO6io+oOth3yUAfql9Ou9cNQZtJLmn+aWbMUSvN2Ov+3Fnuiy9o6HiR6qp2d71HAeNxRaYM+t6eKKmEhOhHOWCSpSF1aCEdTW7rsfMJH1K/2t90fTfnrj6+u7s8G6LQs33cDtNP3F2VAXIBNrc9Pt6BfmSdEE55hI9rbE9Bt9CjCnf4chp2IEoZPKZlRlM0PwWlcIr02EU/txwzV+1+HDKycXDj7yFHQhkMK+3hpLk3ASJtaouw13BIXvM4PEQ1LSW6jALDURn/UEPnaMDvk1UzMdC6h5PXapAHSKK2fwFGwyNGIjFxZhk953D0/MU6NtijBDp6aB6Eu7NAFXRxxRBoUpWf8Jq+XUb3YVSFyINqdGbc/t0Ib0qaAbCRF9mqd/qVxgIVzLhVwFIyMHBqswvMCasBdL7jyXMiLW9nNQBpg3f2lNEIlT+j+ntpaBvc4T4mKWQP+n73J9rwiXEv78fzQxTu7/vd+5CJFsi33E7oIZxyW8qWR0byOuSRgTVWpC9AkQNzoBCDH7TmCqUfKMZjQ+OcTwtbwGiZwa+5h2+JRx7DdbLuwkcRgtGhRy9gdZR+7XANVSWY1U+0HwZTErb4dSLQg=
+  app: node-ts-test
+  on:
+    repo: Khamad/node_ts_test
